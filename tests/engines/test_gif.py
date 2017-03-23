@@ -15,7 +15,7 @@ from preggy import expect
 
 from thumbor.context import ServerParameters, RequestParameters
 from thumbor.config import Config
-from thumbor.engines.gif import Engine, GifSicleError
+from thumbor.engines.gif import Engine
 from thumbor.utils import which
 from thumbor.importer import Importer
 
