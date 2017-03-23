@@ -35,7 +35,7 @@ class Engine(PILEngine):
         if p.returncode != 0:
             logger.error(stderr_data)
 
-        if stdout_data == None:
+        if stdout_data is None:
             raise GifSicleError(
                 'gifsicle command returned errorlevel {0} for command "{1}" (image maybe corrupted?)'.format(
                     p.returncode, ' '.join(
